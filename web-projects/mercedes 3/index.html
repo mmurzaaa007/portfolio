@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Концептуальный сайт Mercedes-Benz для дизайнерского портфолио."
+    >
+    <title>Mercedes-Benz — Concept Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container site-header__inner">
+            <a class="brand" href="#home" aria-label="Mercedes-Benz — на главную">
+                Mercedes-Benz
+            </a>
+
+            <nav class="desktop-nav" aria-label="Основная навигация">
+                <a class="nav-link" href="#home">Главная</a>
+                <a class="nav-link" href="#models">Модели</a>
+                <a class="nav-link" href="#amg">AMG</a>
+                <a class="nav-link" href="#electric">Электромобили</a>
+                <a class="nav-link" href="#gallery">Галерея</a>
+            </nav>
+
+            <a class="header-cta button button--ghost" href="#models">
+                Выбрать автомобиль
+            </a>
+
+            <button
+                class="burger"
+                id="burgerButton"
+                type="button"
+                aria-label="Открыть меню"
+                aria-controls="mobileMenu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu" aria-label="Мобильная навигация">
+            <a href="#home">Главная</a>
+            <a href="#models">Модели</a>
+            <a href="#amg">AMG</a>
+            <a href="#electric">Электромобили</a>
+            <a href="#gallery">Галерея</a>
+            <a class="button button--light" href="#models">Выбрать автомобиль</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero__media-wrap" aria-hidden="true">
+                <img
+                    class="hero__media"
+                    id="heroImage"
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_AMG_GT_(42341538014).jpg?width=1800"
+                    alt=""
+                >
+            </div>
+            <div class="hero__overlay"></div>
+
+            <div class="container hero__content">
+                <p class="eyebrow reveal">Mercedes-AMG</p>
+
+                <h1 class="hero__title reveal">
+                    GT 63 4MATIC+
+                </h1>
+
+                <p class="hero__subtitle reveal">
+                    Рождён для скорости
+                </p>
+
+                <div class="hero-specs reveal">
+                    <div class="hero-spec">
+                        <strong>585</strong>
+                        <span>л.с.</span>
+                    </div>
+                    <div class="hero-spec">
+                        <strong>3,2</strong>
+                        <span>сек · 0–100 км/ч</span>
+                    </div>
+                    <div class="hero-spec">
+                        <strong>315</strong>
+                        <span>км/ч</span>
+                    </div>
+                </div>
+
+                <div class="hero__actions reveal">
+                    <button
+                        class="button button--light"
+                        type="button"
+                        data-open-model="amg-gt"
+                    >
+                        Подробнее
+                    </button>
+                    <a class="button button--outline-light" href="#models">
+                        Смотреть модели
+                    </a>
+                </div>
+            </div>
+
+            <a class="scroll-indicator" href="#models" aria-label="Прокрутить к моделям">
+                <span>Scroll</span>
+                <i></i>
+            </a>
+        </section>
+
+        <!-- Models -->
+        <section class="section models" id="models">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow eyebrow--dark">Discover Mercedes-Benz</p>
+
+                    <div class="section-heading__row">
+                        <h2>Выберите свой Mercedes</h2>
+                        <p>
+                            Шесть характеров — от спортивного гран-турера
+                            до флагманского электромобиля.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="filters reveal" role="group" aria-label="Фильтр моделей">
+                    <button class="filter-button is-active" type="button" data-filter="all">
+                        Все
+                    </button>
+                    <button class="filter-button" type="button" data-filter="amg">
+                        AMG
+                    </button>
+                    <button class="filter-button" type="button" data-filter="sedan">
+                        Sedan
+                    </button>
+                    <button class="filter-button" type="button" data-filter="suv">
+                        SUV
+                    </button>
+                    <button class="filter-button" type="button" data-filter="electric">
+                        Electric
+                    </button>
+                </div>
+
+                <div class="model-grid" id="modelGrid">
+                    <article class="model-card reveal" data-category="amg" data-model="amg-gt">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_AMG_GT_(42341538014).jpg?width=1600"
+                                alt="Mercedes-AMG GT"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">AMG</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Performance Coupé</p>
+                                <h3>Mercedes-AMG GT</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>585 л.с.</span>
+                                <span>3,2 сек</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="amg-gt"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="model-card reveal" data-category="sedan" data-model="s-class">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/MERCEDES-BENZ_S-CLASS_(W223)_China_(22).jpg?width=1600"
+                                alt="Mercedes-Benz S-Class"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">Sedan</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Luxury Sedan</p>
+                                <h3>Mercedes-Benz S-Class</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>503 л.с.</span>
+                                <span>4,4 сек</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="s-class"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="model-card reveal" data-category="suv" data-model="g-class">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_Benz_G_Class_W463_in_Lane_11,_Xindong_Street_20140420.jpg?width=1600"
+                                alt="Mercedes-Benz G-Class"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">SUV</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Iconic SUV</p>
+                                <h3>Mercedes-Benz G-Class</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>585 л.с.</span>
+                                <span>4,4 сек</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="g-class"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="model-card reveal" data-category="amg" data-model="amg-sl">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-AMG_SL_63_(R232)_IMG_1279_(cropped).jpg?width=1600"
+                                alt="Mercedes-AMG SL"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">AMG</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Roadster</p>
+                                <h3>Mercedes-AMG SL</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>585 л.с.</span>
+                                <span>3,6 сек</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="amg-sl"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="model-card reveal" data-category="electric sedan" data-model="eqs">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/24_Mercedes-Benz_EQS_V297_1.jpg?width=1600"
+                                alt="Mercedes-Benz EQS"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">Electric</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Electric Luxury</p>
+                                <h3>Mercedes-Benz EQS</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>до 770 км</span>
+                                <span>4MATIC</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="eqs"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="model-card reveal" data-category="coupe" data-model="cle">
+                        <div class="model-card__image">
+                            <img
+                                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_CLE_300_Coup%C3%A9_(C236,_2025)_(55012870355).jpg?width=1600"
+                                alt="Mercedes-Benz CLE Coupé"
+                                loading="lazy"
+                            >
+                            <span class="model-card__badge">Coupé</span>
+                        </div>
+
+                        <div class="model-card__content">
+                            <div>
+                                <p class="model-card__category">Grand Touring Coupé</p>
+                                <h3>Mercedes-Benz CLE Coupé</h3>
+                            </div>
+
+                            <div class="model-card__specs">
+                                <span>449 л.с.</span>
+                                <span>4,2 сек</span>
+                            </div>
+
+                            <button
+                                class="model-card__button"
+                                type="button"
+                                data-open-model="cle"
+                            >
+                                Подробнее
+                                <span aria-hidden="true">↗</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-state" id="emptyState">
+                    В этой категории пока нет автомобилей.
+                </p>
+            </div>
+        </section>
+
+        <!-- AMG -->
+        <section class="amg-section" id="amg">
+            <div class="amg-section__visual reveal">
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_AMG_GT_1.jpg?width=1800"
+                    alt="Mercedes-AMG на дороге"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="amg-section__content reveal">
+                <p class="eyebrow">Mercedes-AMG</p>
+                <h2>Engineered for performance</h2>
+                <p class="amg-section__text">
+                    AMG — это точность инженерии, эмоциональная управляемость
+                    и характер, который ощущается ещё до запуска двигателя.
+                </p>
+
+                <div class="amg-counters" id="amgCounters">
+                    <div class="counter-block">
+                        <strong
+                            class="counter"
+                            data-target="585"
+                            data-decimals="0"
+                        >
+                            0
+                        </strong>
+                        <span>л.с.</span>
+                    </div>
+
+                    <div class="counter-block">
+                        <strong
+                            class="counter"
+                            data-target="3.2"
+                            data-decimals="1"
+                        >
+                            0
+                        </strong>
+                        <span>сек · 0–100</span>
+                    </div>
+
+                    <div class="counter-block">
+                        <strong
+                            class="counter"
+                            data-target="315"
+                            data-decimals="0"
+                        >
+                            0
+                        </strong>
+                        <span>км/ч</span>
+                    </div>
+                </div>
+
+                <button
+                    class="text-link"
+                    type="button"
+                    data-open-model="amg-gt"
+                >
+                    Открыть Mercedes-AMG GT
+                    <span aria-hidden="true">↗</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Interior -->
+        <section class="section interior" id="interior">
+            <div class="container">
+                <div class="interior__heading reveal">
+                    <p class="eyebrow eyebrow--dark">Crafted around you</p>
+                    <h2>Luxury from within</h2>
+                    <p>
+                        Интерьер, в котором технологии становятся частью атмосферы.
+                    </p>
+                </div>
+
+                <div class="interior-grid">
+                    <button
+                        class="interior-card interior-card--large reveal"
+                        type="button"
+                        data-interior-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_EQS450_interior.jpg?width=1600"
+                        aria-label="Открыть крупное изображение интерьера"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_EQS450_interior.jpg?width=1600"
+                            alt="Интерьер Mercedes-Benz с центральным экраном"
+                            loading="lazy"
+                        >
+                        <span>Digital cockpit</span>
+                    </button>
+
+                    <button
+                        class="interior-card reveal"
+                        type="button"
+                        data-interior-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_EQS_450_4MATIC_SUV_(X296)_interior.jpg?width=1600"
+                        aria-label="Открыть фотографию руля Mercedes-Benz"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_EQS_450_4MATIC_SUV_(X296)_interior.jpg?width=1600"
+                            alt="Руль Mercedes-Benz"
+                            loading="lazy"
+                        >
+                        <span>Driver focus</span>
+                    </button>
+
+                    <button
+                        class="interior-card reveal"
+                        type="button"
+                        data-interior-image="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_interior_of_Mercedes-Benz_EQS_450_4MATIC_SUV_(X296).jpg?width=1600"
+                        aria-label="Открыть фотографию подсветки салона"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_interior_of_Mercedes-Benz_EQS_450_4MATIC_SUV_(X296).jpg?width=1600"
+                            alt="Ambient lighting в салоне Mercedes-Benz"
+                            loading="lazy"
+                        >
+                        <span>Ambient light</span>
+                    </button>
+                </div>
+
+                <div class="interior__footer reveal">
+                    <p>
+                        Материалы, свет и интерфейсы собраны в единую
+                        спокойную цифровую среду.
+                    </p>
+                    <button
+                        class="button button--dark"
+                        id="exploreInteriorButton"
+                        type="button"
+                    >
+                        Исследовать интерьер
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Electric -->
+        <section class="electric section" id="electric">
+            <div class="container electric__grid">
+                <div class="electric__content reveal">
+                    <p class="eyebrow">Mercedes-EQ</p>
+                    <h2>Electric intelligence</h2>
+                    <p>
+                        Тишина, аэродинамика и цифровая роскошь в новой
+                        интерпретации флагманского седана.
+                    </p>
+
+                    <div class="electric-stats">
+                        <div>
+                            <strong>до 770 км</strong>
+                            <span>запас хода</span>
+                        </div>
+                        <div>
+                            <strong>31 мин</strong>
+                            <span>быстрая зарядка</span>
+                        </div>
+                        <div>
+                            <strong>4MATIC</strong>
+                            <span>полный привод</span>
+                        </div>
+                    </div>
+
+                    <button
+                        class="button button--outline-light"
+                        type="button"
+                        data-open-model="eqs"
+                    >
+                        Подробнее об EQS
+                    </button>
+                </div>
+
+                <div class="electric__visual reveal">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/24_Mercedes-Benz_EQS_V297_1.jpg?width=1800"
+                        alt="Mercedes-Benz EQS"
+                        loading="lazy"
+                    >
+                    <div class="electric__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="section gallery" id="gallery">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow eyebrow--dark">Visual stories</p>
+                    <div class="section-heading__row">
+                        <h2>Gallery</h2>
+                        <p>
+                            Детали, линии и движение — Mercedes-Benz
+                            в шести визуальных эпизодах.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <button
+                        class="gallery-item gallery-item--wide reveal"
+                        type="button"
+                        data-gallery-index="0"
+                        aria-label="Открыть фотографию 1"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_AMG_GT_(42341538014).jpg?width=1600"
+                            alt="Mercedes-Benz спереди"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <button
+                        class="gallery-item gallery-item--tall reveal"
+                        type="button"
+                        data-gallery-index="1"
+                        aria-label="Открыть фотографию 2"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/MERCEDES-BENZ_S-CLASS_(W223)_China_(22).jpg?width=1600"
+                            alt="Mercedes-Benz сбоку"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <button
+                        class="gallery-item reveal"
+                        type="button"
+                        data-gallery-index="2"
+                        aria-label="Открыть фотографию 3"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_Benz_G_Class_W463_in_Lane_11,_Xindong_Street_20140420.jpg?width=1600"
+                            alt="Задняя часть Mercedes-Benz"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <button
+                        class="gallery-item reveal"
+                        type="button"
+                        data-gallery-index="3"
+                        aria-label="Открыть фотографию 4"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-Benz_EQS450_interior.jpg?width=1600"
+                            alt="Интерьер Mercedes-Benz"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <button
+                        class="gallery-item gallery-item--wide reveal"
+                        type="button"
+                        data-gallery-index="4"
+                        aria-label="Открыть фотографию 5"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_interior_of_Mercedes-Benz_EQS_450_4MATIC_SUV_(X296).jpg?width=1600"
+                            alt="Руль Mercedes-Benz"
+                            loading="lazy"
+                        >
+                    </button>
+
+                    <button
+                        class="gallery-item reveal"
+                        type="button"
+                        data-gallery-index="5"
+                        aria-label="Открыть фотографию 6"
+                    >
+                        <img
+                            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes-AMG_SL_63_(R232)_IMG_1279_(cropped).jpg?width=1600"
+                            alt="Mercedes-Benz на дороге"
+                            loading="lazy"
+                        >
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <img
+                class="final-cta__image"
+                src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mercedes_AMG_GT_1.jpg?width=1800"
+                alt="Mercedes-Benz на дороге"
+                loading="lazy"
+            >
+            <div class="final-cta__overlay"></div>
+
+            <div class="container final-cta__content reveal">
+                <p class="eyebrow">Mercedes-Benz</p>
+                <h2>The best or nothing.</h2>
+                <p>
+                    Создан для тех, кто не выбирает между комфортом и характером.
+                </p>
+                <a class="button button--light" href="#models">
+                    Найти свой Mercedes
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a class="brand" href="#home">Mercedes-Benz</a>
+                <p>
+                    Concept website for a web designer portfolio.
+                </p>
+            </div>
+
+            <div>
+                <h3>Models</h3>
+                <a href="#models" data-filter-link="amg">AMG</a>
+                <a href="#models" data-open-model="s-class">S-Class</a>
+                <a href="#models" data-open-model="g-class">G-Class</a>
+                <a href="#electric">EQS</a>
+            </div>
+
+            <div>
+                <h3>Mercedes-Benz</h3>
+                <a href="#home">О бренде</a>
+                <a href="#electric">Технологии</a>
+                <a href="#interior">Дизайн</a>
+            </div>
+
+            <div>
+                <h3>Social</h3>
+                <a
+                    href="https://www.instagram.com/mercedesbenz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+                <a
+                    href="https://www.youtube.com/@MercedesBenz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    YouTube
+                </a>
+                <a
+                    href="https://www.facebook.com/MercedesBenz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Facebook
+                </a>
+            </div>
+        </div>
+
+
+        <details class="photo-credits">
+            <summary>Источники фотографий</summary>
+            <div class="photo-credits__content">
+                <p>
+                    Фотографии автомобилей и интерьеров используются в учебном
+                    некоммерческом концепте. Источник: Wikimedia Commons.
+                </p>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes_AMG_GT_(42341538014).jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-AMG GT — Guillaume Vachey, CC0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:MERCEDES-BENZ_S-CLASS_(W223)_China_(22).jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz S-Class W223 — Dinkun Chen, CC BY-SA 4.0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes_Benz_G_Class_W463_in_Lane_11,_Xindong_Street_20140420.jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz G-Class — 玄史生, CC0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes-AMG_SL_63_(R232)_IMG_1279_(cropped).jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-AMG SL 63 — Alexander-93, CC BY-SA 4.0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:24_Mercedes-Benz_EQS_V297_1.jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz EQS — Benespit, CC BY-SA 4.0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_CLE_300_Coup%C3%A9_(C236,_2025)_(55012870355).jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz CLE Coupé — Charles, CC0
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_EQS450_interior.jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz EQS interior — deathpallie325
+                </a>
+                <a href="https://commons.wikimedia.org/wiki/File:Mercedes-Benz_EQS_450_4MATIC_SUV_(X296)_interior.jpg" target="_blank" rel="noopener noreferrer">
+                    Mercedes-Benz EQS SUV interior — Tokumeigakarinoaoshima
+                </a>
+            </div>
+        </details>
+
+        <div class="container footer__bottom">
+            <span>© 2026 Mercedes-Benz Concept Website</span>
+            <span>Concept design created for portfolio purposes.</span>
+        </div>
+    </footer>
+
+    <!-- Vehicle modal -->
+    <div
+        class="modal"
+        id="vehicleModal"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+    >
+        <div class="modal__backdrop" data-close-modal></div>
+
+        <div class="modal__panel" role="document">
+            <button
+                class="modal__close"
+                id="modalCloseButton"
+                type="button"
+                aria-label="Закрыть окно"
+            >
+                ×
+            </button>
+
+            <div class="modal__image-wrap">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="modal__content">
+                <p class="eyebrow eyebrow--dark" id="modalCategory"></p>
+                <h2 id="modalTitle"></h2>
+                <p class="modal__description" id="modalDescription"></p>
+
+                <dl class="modal__specs">
+                    <div>
+                        <dt>Мощность</dt>
+                        <dd id="modalPower"></dd>
+                    </div>
+                    <div>
+                        <dt>Двигатель</dt>
+                        <dd id="modalEngine"></dd>
+                    </div>
+                    <div>
+                        <dt>0–100 км/ч</dt>
+                        <dd id="modalAcceleration"></dd>
+                    </div>
+                    <div>
+                        <dt>Макс. скорость</dt>
+                        <dd id="modalTopSpeed"></dd>
+                    </div>
+                </dl>
+
+                <div class="modal__actions">
+                    <button
+                        class="button button--dark"
+                        id="modalGalleryButton"
+                        type="button"
+                    >
+                        Смотреть галерею
+                    </button>
+                    <button
+                        class="button button--outline-dark"
+                        type="button"
+                        data-close-modal
+                    >
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Галерея Mercedes-Benz"
+    >
+        <div class="lightbox__backdrop" data-close-lightbox></div>
+
+        <button
+            class="lightbox__close"
+            id="lightboxCloseButton"
+            type="button"
+            aria-label="Закрыть галерею"
+        >
+            ×
+        </button>
+
+        <button
+            class="lightbox__arrow lightbox__arrow--prev"
+            id="lightboxPrev"
+            type="button"
+            aria-label="Предыдущее изображение"
+        >
+            ‹
+        </button>
+
+        <figure class="lightbox__figure">
+            <img id="lightboxImage" src="" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+
+        <button
+            class="lightbox__arrow lightbox__arrow--next"
+            id="lightboxNext"
+            type="button"
+            aria-label="Следующее изображение"
+        >
+            ›
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

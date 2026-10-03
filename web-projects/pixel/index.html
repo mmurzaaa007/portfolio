@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelStep — онлайн-школа цифрового дизайна</title>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!--шапка-->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#home">
+        <img src="assets/logo.svg" alt="PixelStep" class="logo__image">
+        <span class="logo__text">Pixel<span>Step</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">О школе</a>
+        <a href="#courses">Курсы</a>
+        <a href="#teachers">Преподаватели</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Запись</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+   <main>
+    <!--главный экран-->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Онлайн-школа цифрового дизайна</p>
+          <h1>Освой дизайн с нуля и собери первые проекты в портфолио</h1>
+          <p class="hero__text">
+            PixelStep помогает новичкам разобраться в графическом дизайне, Figma,
+            композиции, цвете и создании современных визуальных проектов.
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#courses" class="btn btn--primary">Выбрать курс</a>
+            <a href="#contact" class="btn btn--secondary">Записаться на урок</a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <strong>3</strong>
+              <span>направления</span>
+            </div>
+            <div>
+              <strong>80+</strong>
+              <span>практических заданий</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>доступ к урокам</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="design-window">
+            <div class="window-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="window-grid">
+              <div class="preview-card big"></div>
+              <div class="preview-card"></div>
+              <div class="preview-card violet"></div>
+              <div class="preview-card green"></div>
+            </div>
+            <div class="progress">
+              <span style="width: 76%"></span>
+            </div>
+            <p>Твой первый макет уже близко</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--о школе-->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div>
+          <p class="section-label">О школе</p>
+          <h2>Учимся дизайну через практику, а не через сухую теорию</h2>
+        </div>
+        <p>
+          PixelStep — это онлайн-школа для начинающих дизайнеров. Мы объясняем сложные
+          темы простым языком и помогаем ученикам создавать реальные учебные проекты:
+          лендинги, постеры, карточки для соцсетей и интерфейсы.
+        </p>
+      </div>
+    </section>
+
+    <!--курсы-->
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Курсы</p>
+          <h2>Выбери направление для старта</h2>
+          <p>Можно начать с любого курса — все программы рассчитаны на новичков.</p>
+        </div>
+
+        <div class="cards">
+          <article class="course-card">
+            <div class="course-card__icon">✦</div>
+            <h3>Основы графического дизайна</h3>
+            <p>Композиция, цвет, типографика, визуальный стиль и работа с референсами.</p>
+            <ul>
+              <li>6 недель обучения</li>
+              <li>12 практических работ</li>
+              <li>Мини-портфолио</li>
+            </ul>
+            <a href="#contact">Записаться</a>
+          </article>
+
+          <article class="course-card course-card--active">
+            <div class="course-card__icon">▣</div>
+            <h3>Веб-дизайн в Figma</h3>
+            <p>Создание структуры сайта, UI-киты, прототипы и адаптивные макеты.</p>
+            <ul>
+              <li>8 недель обучения</li>
+              <li>Лендинг в портфолио</li>
+              <li>Проверка наставника</li>
+            </ul>
+            <a href="#contact">Записаться</a>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__icon">●</div>
+            <h3>Дизайн для соцсетей</h3>
+            <p>Баннеры, посты, сторис, оформление профиля и визуальная система бренда.</p>
+            <ul>
+              <li>4 недели обучения</li>
+              <li>Шаблоны для контента</li>
+              <li>Разбор работ</li>
+            </ul>
+            <a href="#contact">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--преимущества-->
+    <section class="section benefits">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Преимущества</p>
+          <h2>Почему ученики выбирают PixelStep</h2>
+        </div>
+
+        <div class="benefits__grid">
+          <div class="benefit">
+            <span>01</span>
+            <h3>Практика с первого занятия</h3>
+            <p>Каждый урок заканчивается понятным заданием, которое можно добавить в портфолио.</p>
+          </div>
+          <div class="benefit">
+            <span>02</span>
+            <h3>Обратная связь</h3>
+            <p>Наставники помогают исправить ошибки и объясняют, как улучшить работу.</p>
+          </div>
+          <div class="benefit">
+            <span>03</span>
+            <h3>Гибкий формат</h3>
+            <p>Уроки доступны онлайн, поэтому можно учиться в удобном темпе.</p>
+          </div>
+          <div class="benefit">
+            <span>04</span>
+            <h3>Современный подход</h3>
+            <p>В программе Figma, UX/UI, визуальные тренды и основы цифрового брендинга.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--этапы обучения-->
+    <section class="section process">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Формат</p>
+          <h2>Как проходит обучение</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <h3>Выбираешь курс</h3>
+            <p>Определяешь направление и оставляешь заявку на сайте.</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <h3>Смотришь уроки</h3>
+            <p>Изучаешь короткие видео и материалы в личном кабинете.</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <h3>Делаешь задания</h3>
+            <p>Создаёшь макеты, постеры, карточки и другие визуальные проекты.</p>
+          </div>
+          <div class="step">
+            <span>4</span>
+            <h3>Получаешь фидбек</h3>
+            <p>Наставник проверяет работу и помогает сделать результат лучше.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--преподователи-->
+    <section class="section teachers" id="teachers">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Команда</p>
+          <h2>Преподаватели школы</h2>
+        </div>
+
+        <div class="teacher-grid">
+          <article class="teacher">
+            <div class="teacher__photo teacher__photo--one">
+              <img src="assets/преподовательЖ.png" alt="Анна Морозова">
+            </div>
+            <h3>Анна Морозова</h3>
+            <p>Графический дизайнер, 6 лет опыта в брендинге и айдентике.</p>
+          </article>
+          <article class="teacher">
+            <div class="teacher__photo teacher__photo--two">
+              <img src="assets/преподовательМ.png" alt="Илья Ветров">
+            </div>
+            <h3>Илья Ветров</h3>
+            <p>UX/UI-дизайнер, специализируется на интерфейсах и Figma.</p>
+          </article>
+          <article class="teacher">
+            <div class="teacher__photo teacher__photo--three">
+              <img src="assets/преподовательЖ2.png" alt="Мария Климова">
+            </div>
+            <h3>Мария Климова</h3>
+            <p>Иллюстратор и арт-директор, помогает развивать визуальное мышление.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--отзывы-->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Отзывы</p>
+          <h2>Что говорят ученики</h2>
+        </div>
+
+        <div class="review-grid">
+          <blockquote>
+            <p>“Я впервые открыла Figma и уже через месяц собрала свой первый макет сайта.”</p>
+            <cite>Алина, студентка</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Очень понравилось, что теория сразу закреплялась практикой. Всё понятно и спокойно.”</p>
+            <cite>Даниил, начинающий дизайнер</cite>
+          </blockquote>
+          <blockquote>
+            <p>“После курса у меня появились работы, которые не стыдно показать в портфолио.”</p>
+            <cite>София, школьница</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!--запись на обучение-->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__content">
+          <p class="section-label">Запись</p>
+          <h2>Начни свой путь в цифровой дизайн</h2>
+          <p>
+            Оставь заявку, и мы подберём подходящий курс для твоего уровня.
+            Форма учебная, данные никуда не отправляются.
+          </p>
+        </div>
+
+        <form class="form" id="requestForm">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Например, Алина" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" placeholder="example@mail.ru" required>
+          </label>
+
+          <label>
+            Курс
+            <select name="course" required>
+              <option value="">Выберите курс</option>
+              <option>Основы графического дизайна</option>
+              <option>Веб-дизайн в Figma</option>
+              <option>Дизайн для соцсетей</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn--primary">Отправить заявку</button>
+          <p class="form__message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--подвал-->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--footer" href="#home">
+        <img src="assets/logo.svg" alt="PixelStep" class="logo__image">
+        <span class="logo__text">Pixel<span>Step</span></span>
+      </a>
+      <p>© 2026 PixelStep.</p>
+      <div class="footer__links">
+        <a href="#">VK</a>
+        <a href="#">Telegram</a>
+      </div>
+
+      <div class="footer__note">
+        <p>Использованы шрифты Onest и Unbounded (SIL Open Font License 1.1).</p>
+        <p>Изображения преподавателей созданы с использованием технологий искусственного интеллекта.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
